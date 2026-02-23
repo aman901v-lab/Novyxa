@@ -1,0 +1,5 @@
+{
+  "name": "Novyxa - Modern Indian E-commerce",
+  "description": "A high-density, conversion-optimized e-commerce platform for the Indian market with a distinct premium visual identity.",
+  "requestFramePermissions": ["geolocation"]
+}
