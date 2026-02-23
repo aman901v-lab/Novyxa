@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --color-primary: #0D3B44;
+  --color-primary-light: #165E6D;
+  --color-accent: #FF6B6B;
+  --color-accent-dark: #E85A5A;
+  --color-surface: #FFFFFF;
+  --color-background: #F8FAFC;
+  --color-muted: #64748B;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-slate-900 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-dark text-white font-semibold py-2 px-6 rounded-lg transition-all active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .card-deal {
+    @apply bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden;
+  }
+
+  .badge-discount {
+    @apply bg-success text-white text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
