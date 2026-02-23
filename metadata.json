@@ -1,7 +1,0 @@
-{
-  "name": "Novyxa - Advanced E-Commerce Ecosystem",
-  "description": "A high-performance e-commerce platform inspired by Flipkart, featuring smart search, seller portals, real-time tracking, and a seamless checkout experience.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
-}
